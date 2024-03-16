@@ -1,24 +1,38 @@
-Ei, tudo bem?
+# Broken Object Level Authorization
 
-Eu desenvolvi esta API para explicar sobre a vulnerabilidade BOLA, que ocorre em APIs. Também fiz uma prova de conceito (PoC) demonstrando como explorar essa vulnerabilidade no meu LinkedIn (confira o link abaixo).
+Criei esta API para abordar a vulnerabilidade conhecida como BOLA, que afeta APIs. Além disso, elaborei uma prova de conceito (PoC) para ilustrar como essa vulnerabilidade pode ser explorada. Você pode conferir o link para o meu LinkedIn abaixo.
+https://www.linkedin.com/feed/update/urn:li:activity:7174808124057391104/
 
-Para executar esta aplicação, siga estes passos simples:
-
+### 📋 Pré-requisitos
+```
+Docker
+```
+### 🔧 Instalação:
 Primeiro, baixe o repositório:
-
+```
 git clone https://github.com/turnerlk/B-O-L-A.git
-
+```
 Em seguida, atualize o gerenciador de pacotes:
 
+```
 sudo apt update
+```
 
-Depois, instale o Docker:
+Posteriormente, proceda com a instalação do Docker caso ainda não o tenha instalado:
 
+```
 sudo apt install docker-ce docker-ce-cli containerd.io
+```
 
-Agora, execute o comando abaixo para iniciar a aplicação:
+A seguir, utilize os comandos abaixo para construir e iniciar a aplicação:
 
+```
+sudo docker build -t api-bola .
 sudo docker run -p 8081:8080 api-bola
+```
+Essas são todas as etapas necessárias! A aplicação estará em execução e você poderá explorar a vulnerabilidade BOLA ao acessar:
 
-Isso é tudo! A aplicação estará rodando e você pode explorar a vulnerabilidade BOLA.
+```
+http://127.0.0.1:8081
+```
 
