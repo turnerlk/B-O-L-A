@@ -111,9 +111,9 @@ class ProfileView(APIView):
         except ValueError:
             return Response({'error': 'Invalid ID provided'}, status=status.HTTP_400_BAD_REQUEST)
         
-        if userid != id: #mitigado!
+        # if userid != id: #para mitigar, só passar o if abaixo.
 
-            return Response({'status': 'error', 'message': 'Unauthorized'}, status=status.HTTP_401_UNAUTHORIZED)
+        #     return Response({'status': 'error', 'message': 'Unauthorized'}, status=status.HTTP_401_UNAUTHORIZED)
       
         user = User.objects.filter(id=id).first()
         if not user:
