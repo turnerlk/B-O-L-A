@@ -1,6 +1,7 @@
 # Broken Object Level Authorization
 
 Criei esta API para abordar a vulnerabilidade conhecida como BOLA, que afeta APIs. Além disso, elaborei uma prova de conceito (PoC) para ilustrar como essa vulnerabilidade pode ser explorada. Você pode conferir o link para o meu LinkedIn abaixo.
+
 https://www.linkedin.com/feed/update/urn:li:activity:7174808124057391104/
 
 ### 📋 Pré-requisitos
